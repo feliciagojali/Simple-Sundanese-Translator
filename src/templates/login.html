@@ -1,0 +1,53 @@
+<html>
+   
+   <style>
+      body{
+         background-image: url({{ url_for('static', filename='6.png') }});
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         
+      }
+      .center-screen {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+    }
+   </style>
+   <body style='background-color: white;'>
+      <form action = "http://localhost:5000/upload" method = "post" enctype = "multipart/form-data">
+      <div class="center-screen">
+         <div style ="text-align: center;">
+            <div style="color:rgb(82, 76, 76); font-family:Georgia, 'Times New Roman', Times, serif; font-size: 50px; text-align: center; font-weight: bolder;">
+            Need A Quick Sundanese-Indonesian Translator? </div>
+            <div style="color:grey; font-family:fantasy; font-size: 18px; text-align: center;padding-top:0.5%">
+            without translation, we would be living in provinces bordering in silence.
+            </div>
+            </br>
+            </br>
+      
+      <div style = "font-family:fantasy;font-size: 18px;color:black;">
+         <input checked="checked" type="radio" name="language" id="sunda" value="0" > Sundanese - Indonesian </input><br>
+         <input type="radio" name="language" id="indo" value="1"> Indonesian - Sundanese </input><br>
+      </div>
+      <br/>
+      <div style="padding-top: 2%;">
+      <div style="color:rgb(82, 76, 76); font-family:fantasy; font-size: 18px; text-align: center;font-weight: bold;">
+      ALGORITHM
+      </div>
+      <div style = "font-family:fantasy;font-size: 18px;color:black;padding-top:1%">
+         <input checked="checked" type="radio" name="method" id="sunda" value="0" > KMP </input><br>
+         <input type="radio" name="method" id="indo" value="1"> BM </input><br>
+         <input type="radio" name="method" id="indo" value="2"> Regex </input><br>
+      </div>
+         <p><input placeholder="Type here" type = "Kata" name = "kw" style="font-size: 15px;font-family: monospace; color:black;width: 500px;"></p>
+         <p><input type = "submit" value = "Submit" /></p>
+      </div>
+      </div>
+   </div>
+      </form>
+   </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+
+   <style>
+    body{
+       background-image: url({{ url_for('static', filename='6.png') }});
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+    
+       
+    }
+    .center-screen {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+    }
+    </style>
+    <body>
+
+        <div class="center-screen"">
+
+        <div style="color:rgb(82, 76, 76); font-family:Georgia, 'Times New Roman', Times, serif; font-size: 50px; text-align: center; font-weight: bolder;"> Glad to help! </div>
+        </br>
+        <div style="color:grey; font-family:monospace; font-size: 15px; text-align: center;font-weight: bold;padding-top: 2%;">{{a}} </div>
+        <div style="color:black; font-family:fantasy; font-size: 20px; text-align: center;font-weight: bold;padding-top: 0.5%;">{{words}} </div>
+        <div style="color:grey; font-family:monospace; font-size: 15px; text-align: center;font-weight: bold;padding-top:2%;">{{b}} </div>
+        <div style="color:black; font-family:fantasy; font-size: 20px; text-align: center;font-weight: bold;padding-top: 0.5%;">{{ans}} </div>
+        
+        
+        <div style="color:grey; font-family:fantasy; font-size: 18px; text-align: center;padding-top: 8%;">
+        Words travel worlds. Translators do the driving.
+        <div/>
+        </div>
+       
+       
+        <br/>
+        <br/>
+        </div>
+    </body>
+</html>
