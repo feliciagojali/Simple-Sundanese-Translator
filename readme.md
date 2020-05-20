@@ -130,7 +130,3 @@ The program is made to read the database from the 'txt' folder, so if you in any
 Youtube video link : 
 https://youtu.be/m84x6dOKK0Y
 
-## Screenshot program
-
-
-
